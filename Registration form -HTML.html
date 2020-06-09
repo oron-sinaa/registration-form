@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<font face="Corbel" color="white">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Registation Form</title>
+	<style>
+			.register 
+			{
+				background-color: RebeccaPurple;
+                margin: 0.5%;
+                padding: 2%;
+            }
+            .register table td
+            {
+                color:white;
+            }
+            .rowspace td 
+            { 
+            	padding-bottom: 0.35em; 
+            	vertical-align:top; 
+            }
+        
+		</style>
+</head>
+
+<body bgcolor="RebeccaPurple">
+	
+	<div class="register">
+	<h1><center><u>STUDENT REGISTRATION FORM</u></center></h1>
+	<hr width="95%">
+	<table align="center" class="rowspace">
+		<tr>
+			<td align="left"><b>FIRST NAME: &nbsp</b></td>
+			<td><input type="text" name="fname" maxlength="30">&nbsp (max 30 characters)</td>
+		</tr>
+		<tr>
+			<td align="left"><b>LAST NAME: &nbsp</b></td>
+			<td><input type="text" name="lname" maxlength="30">&nbsp (max 30 characters)</td>
+		</tr>
+		<tr>
+			<td align="left"><b>DOB: &nbsp</b></td>
+			<td><input type="date" name="dob" cols="20"></td>
+		</tr>
+		<tr>
+			<td align="left"><b>EMAIL: &nbsp</b></td>
+			<td><input type="mail" name="mail" placeholder="xyz@abc.com"></td>
+		</tr>
+		<tr>
+			<td align="left"><b>MOBILE: &nbsp</b></td>
+			<td><input type="number" name="m-number" placeholder="(without country code)" max="10"></td>
+		</tr>
+		<tr>
+			<td align="left"><b>GENDER: &nbsp</b></td>
+			<td><input type="radio" name="gender" value="MALE">&nbsp MALE
+				<input type="radio" name="gender" value="FEMALE">&nbsp FEMALE
+				<input type="radio" name="gender" value="OTHERS">&nbsp OTHERS
+			</td>
+		</tr>
+		<tr>
+			<td align="left"><b>ADDRESS: &nbsp</b></td>
+			<td><textarea name="address" cols="30" rows="6"></textarea></td>
+		</tr>
+		<tr>
+			<td align="left"><b>CITY: &nbsp</b></td>
+			<td><input type="text" name="city"></td>
+		</tr>
+		<tr>
+			<td align="left"><b>PINCODE: &nbsp</b></td>
+			<td><input type="number" name="pincode" max="6"></td>
+		</tr>
+		<tr>
+			<td align="left"><b>STATE: &nbsp</b></td>
+			<td><input type="text" name="state"></td>
+		</tr>
+		<tr>
+			<td align="left"><b>COUNTRY: &nbsp</b></td>
+			<td><input type="text" name="country" placeholder="INDIA"></td>
+		</tr>
+		<tr>
+			<td align="left"><b>HOBBIES: &nbsp</b></td>
+			<td><input type="checkbox" name="hobby1" value="Music">Music &nbsp 
+			<input type="checkbox" name="hobby2" value="Dance">Dance &nbsp 
+			<input type="checkbox" name="hobby3" value="FineArts">FineArts &nbsp 
+			<input type="checkbox" name="hobby4" value="Sports">Sports &nbsp 
+			<input type="checkbox" name="hobby5" value="Others:">Others: &nbsp 
+			<input type="text" name="hobby-other" cols="1" rows="5"></td>
+		</tr>
+		<tr>
+			<td><b>QUALIFICATIONS: &nbsp</b></td>
+			<td>
+				<table border="1">
+					<tr>
+						<b><th>S NO.</th>
+						<th>Examination</th>
+						<th>Board</th>
+						<th>Percentage</th>
+						<th>Year of Passing</th><b>
+
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Class X</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Class XII</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Graduation</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Masters</td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+						<td><input type="text"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="left"><b>COURSES APPLIED: &nbsp</b></td>
+			<td><input type="checkbox" name="course1" value="BCA">BCA &nbsp 
+			<input type="checkbox" name="course2" value="B.Com">B.Com &nbsp 
+			<input type="checkbox" name="course3" value="B.Sc">B.Sc &nbsp 
+			<input type="checkbox" name="course4" value="B.A.">B.A. &nbsp 
+			<input type="checkbox" name="course5" value="Others:">Others: &nbsp 
+			<input type="text" name="course-other" cols="1" rows="5"></td>
+		</tr>
+	</table>
+	<hr width="95%">
+	<center>
+		<input type="submit" name="submit" id="sub1" />&nbsp
+		<input type="reset" name="reset" id="res1" />
+	</center>
+</div>
+</body>
+</font>
+</html>
